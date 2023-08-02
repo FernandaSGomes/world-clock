@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Fernanda Gomes</title>
   </head>
   <body>
@@ -16,14 +18,14 @@
         <option value="">Hong Kong 🇨🇳</option>
         <option value="">Brasilia 🇧🇷</option>
       </select>
-      <div class="city">
+      <div class="city" id="new-york">
         <div>
           <h2>New York 🇺🇸</h2>
-          <div class="date">August 1 2023</div>
+          <div class="date"></div>
         </div>
-        <div class="time">9:00:14 <small>AM</small></div>
+        <div class="time"><small>AM</small></div>
       </div>
-      <div class="city">
+      <div class="city" id="london">
         <div>
           <h2>London 🇬🇧󠁧󠁢</h2>
           <div class="date">August 1 2023</div>
