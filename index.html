@@ -9,40 +9,52 @@
     <title>World Clock - Fernanda Gomes</title>
   </head>
   <body>
-    <div class="container">
-      <h1>World Clock</h1>
+    <div class="background">
+      <video
+        playsinline
+        loop
+        muted
+        autoplay
+        src="/images&videos/world-video.mp4"
+        alt="Cloud"
+      ></video>
 
-      <select id="city">
-        <option value="">Select a city...</option>
-        <option value="current">My current location</option>
-        <option value="Europe/Paris">Paris 🇫🇷</option>
-        <option value="Asia/Hong_Kong">Hong Kong 🇨🇳</option>
-        <option value="America/Sao_Paulo">Sao Paulo 🇧🇷</option>
-      </select>
+      <div class="container">
+        <h1>World Clock</h1>
 
-      <div id="cities">
-        <div class="city" id="new-york">
-          <div>
-            <h2>New York 🇺🇸</h2>
-            <div class="date"></div>
+        <select id="city">
+          <option value="">Select a city...</option>
+          <option value="current">My current location</option>
+          <option value="Europe/Paris">Paris 🇫🇷</option>
+          <option value="Asia/Hong_Kong">Hong Kong 🇨🇳</option>
+          <option value="America/Sao_Paulo">Sao Paulo 🇧🇷</option>
+        </select>
+
+        <div id="cities">
+          <div class="city" id="new-york">
+            <div>
+              <h2>New York 🇺🇸</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"><small>AM</small></div>
           </div>
-          <div class="time"><small>AM</small></div>
-        </div>
-        <div class="city" id="london">
-          <div>
-            <h2>London 🇬🇧󠁧󠁢</h2>
-            <div class="date"></div>
+          <div class="city" id="london">
+            <div>
+              <h2>London 🇬🇧󠁧󠁢</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"><small>AM</small></div>
           </div>
-          <div class="time"><small>AM</small></div>
         </div>
       </div>
+      <footer>
+        This project was coded with ❤️ <strong> by Fernanda Gomes</strong> and
+        is
+        <a href="https://github.com/FernandaSGomes/world-clock" target="_blank"
+          >open sourced on GitHub</a
+        >
+      </footer>
     </div>
-    <footer>
-      This project was coded with ❤️ <strong> by Fernanda Gomes</strong> and is
-      <a href="https://github.com/FernandaSGomes/world-clock" target="_blank"
-        >open sourced on GitHub</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
