@@ -79,3 +79,6 @@ footer {
   vertical-align: middle;
   line-height: 36px;
 }
+.mail {
+  color: inherit;
+}
