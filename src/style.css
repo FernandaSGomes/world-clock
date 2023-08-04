@@ -12,11 +12,18 @@ video {
   left: 0;
 }
 h1 {
+  color: black;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 15px rgba(255, 255, 255, 1),
+    0px 0px 20px rgb(24, 243, 255), 0px 0px 30px rgb(24, 243, 255),
+    0px 0px 40px rgb(24, 243, 255), 0px 0px 55px rgb(24, 243, 255),
+    0px 0px 75px rgb(24, 243, 255);
   text-align: center;
   font-family: serif;
-  font-size: 36px;
+  font-size: 40px;
 }
 h2 {
+  text-shadow: 2px 1px 2px white;
   margin: 0 0 5px;
   font-size: 28px;
 }
@@ -30,13 +37,19 @@ select {
 footer {
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
   max-width: 600px;
   margin: 25px auto;
-  background: white;
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247, 0.9) 11.2%,
+    rgb(237, 246, 250, 0.9) 100.2%
+  );
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -54,11 +67,12 @@ footer {
   border: none;
 }
 .date {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .time {
   font-size: 48px;
   font-weight: bold;
+  text-shadow: 2px 1px 2px grey;
 }
 .time small {
   font-size: 24px;
