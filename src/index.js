@@ -21,19 +21,18 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  let lisbonElement = document.querySelector("#lisbon");
-  if (lisbonElement) {
-    let lisbonDateElement = lisbonElement.querySelector(".date");
-    let lisbonTimeElement = lisbonElement.querySelector(".time");
-    let lisbonTime = moment().tz("Europe/Lisbon");
+  let bahiaElement = document.querySelector("#bahia");
+  if (bahiaElement) {
+    let bahiaDateElement = bahiaElement.querySelector(".date");
+    let bahiaTimeElement = bahiaElement.querySelector(".time");
+    let bahiaTime = moment().tz("America/Bahia");
 
-    lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-    lisbonTimeElement.innerHTML = lisbonTime.format(
+    bahiaDateElement.innerHTML = bahiaTime.format("MMMM Do YYYY");
+    bahiaTimeElement.innerHTML = bahiaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
